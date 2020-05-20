@@ -1,13 +1,242 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --lightBlue: #99ccff;
+  --borderBlue: #006666;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.NavBar {
+  padding: 13px 0px;
+  background-color: var(--lightBlue);
+  border-bottom: 2px solid var(--borderBlue);
+  max-width: 100%;
+  height: auto;
+}
+
+.NavBar img {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: auto;
+  float:left;
+}
+
+.NavBar h1 {
+  font-family: Ubuntu;
+  font-size: 50px;
+}
+
+.AppMain {
+  display: flex;
+  flex-direction: row;
+}
+
+.body {
+  background-color: #30289b;
+}
+
+.canvas {
+  text-align: center;
+  background-color: #30289b;
+  padding: 10px;
+}
+
+#canvas {
+  border: 2px solid #c0c0c0;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.SectionOne {
+}
+
+.FishPole{
+  float: left;
+  width: 270px;
+  background-color: #f5eded;
+  border: 2px solid #006666;
+  border-top: 0;
+}
+
+#fishPole {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 32px;
+}
+
+.FishButton{
+  width: 270px;
+  background-color: #99ccff;
+  border-right: 2px solid #006666;
+  border-left: 2px solid #006666;
+  border-bottom: 2px solid #006666;
+}
+
+
+#fishButton {
+  margin-top: 10px;
+  margin-bottom:10px;
+  margin-left: 40px;
+  padding: 2px 2px;
+  font-size: 35px;
+  background-color: #2428fc;
+  border: 2px solid #0d3636;
+  border-radius: 4px;
+  color: #000000;
+  font-weight: bold;
+  font-family: Ubuntu;
+  transition: all 0.2s ease;
+}
+
+#fishButton:hover {
+  cursor:pointer;
+  background-color: #0000eb;
+}
+
+.FishCount{
+  width: 270px;
+  border: 2px solid #006666;
+  border-top: 0;
+  background-color: #99ccff;
+  border-bottom: 0;
+}
+
+#fishCountLabel{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Ubuntu;
+}
+
+#fishCount{
+  padding-top: 2px;
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Ubuntu;
+}
+
+#fpsCounter{
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  font-family: Ubuntu;
+}
+
+.BaitShop{
+  height: 470px;
+  width: 270px;
+  border: 2px solid #2c1801;
+  background-color: rgb(238, 178, 66);
+}
+
+#baitShopName{
+  height: 80px;
+  background-color: rgb(128, 77, 0);
+  padding-top: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Ubuntu;
+  text-align: center;
+}
+
+.SectionTwo{
+  width: 100%;
+}
+
+#structureLabel{
+  border: 2px solid #006666;
+  border-top: 0;
+  border-left: 0;
+  background-color: #99ccff;
+  text-align: center;
+  font-family: Ubuntu;
+  font-weight: bold;
+  font-size: 50px;
+
+}
+
+.SectionThree{
+  width: 400px;
+  float: left;
+}
+
+#structureStoreTitle{
+  border: 2px solid #006666;
+  border-top: 0;
+  border-left: 0;
+  background-color: #99ccff;
+  text-align: center;
+  font-family: Ubuntu;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.StructureStoreItems{
+  height:80px;
+  border: 2px solid #006666;
+  background-color: #99ccff;
+  font-family: Ubuntu;
+  font-weight: bold;
+  font-size: 12px;
+  clear:both;
+}
+
+
+
+#fishingPole{
+  border-top: 0;
+}
+
+#net{
+  border-top: 0;
+}
+
+#boat{
+  border-top: 0;
+}
+
+#crew{
+  border-top: 0;
+}
+
+#yacht{
+  border-top: 0;
+}
+
+#fishFactory{
+  border-top: 0;
+}
+
+#fishPortal{
+  border-top: 0;
+}
+
+/* cant get the buttons to go under the items */
+
+.BuyButton{
+  margin-top: 10px;
+  margin-bottom:10px;
+  margin-left: 40px;
+  padding: 2px 2px;
+  font-size: 20px;
+  background-color: #2428fc;
+  border: 2px solid #0d3636;
+  border-radius: 4px;
+  color: #000000;
+  font-weight: bold;
+  font-family: Ubuntu;
+  transition: all 0.2s ease;
+}
+
+.BuyButton:hover {
+  cursor:pointer;
+  background-color: #0000eb;
+}
+
