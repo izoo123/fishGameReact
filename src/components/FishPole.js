@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function FishPole(props) {
+export default function FishPole() {
   return (
     <div className="FishPole">
-      <img src={props.fishPoleImg} alt=""/>
+      <img src={require('../images/fishingrod.png')} alt=""/>
     </div>
   )
 }

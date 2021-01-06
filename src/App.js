@@ -4,7 +4,6 @@ import './App.css';
 import FishContextProvider from './FishContext';
 
 class App extends Component {
-
   state = {
     // fishCount: 0,
     // fps: 0,
@@ -22,7 +21,7 @@ class App extends Component {
       return (
         <div>
           <FishContextProvider>
-            <AppDisplay state={this.state} handleClick={this.handleClick}/>
+            <AppDisplay state={this.state} /*handleClick={this.handleClick}*//>
           </FishContextProvider>
         </div>
       )
