@@ -10,14 +10,14 @@ function AppDisplay (props) {
       <NavBar />
 
       <div className="AppMain">
-        <SectionOne state={props.state} handleClick={props.handleClick}/>
+        <SectionOne/>
 
         <div className="SectionTwo">
          <Structures />
         </div>
 
         <div className="SectionThree">
-          <StructureStore fishCount={props.state.fishCount}/>
+          <StructureStore/>
         </div>
       </div>
 

@@ -7,9 +7,9 @@ import BaitShop from '../components/BaitShop'
 function SectionOne(props) {
     return (
         <div className="SectionOne">
-            <FishPole fishPoleImg={props.state.fishPoleImg} />
+            <FishPole />
             <FishButton handleClick={props.handleClick}/>
-            <FishCount fps={props.state.fps} fishCount={props.state.fishCount} />
+            <FishCount />
             <BaitShop />
         </div>
     )
